@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/payment.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛒</text></svg>"
+    />
+    <title>Payment</title>
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html ">
+            <i class="fa-solid fa-bolt-lightning"></i>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Delivery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Payment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Warranty</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <section class="row mx-0">
+          <div class="col-12 px-0 d-flex flex-column align-items-center">
+            <h2 id="payment-methods" class="my-3">Payment methods</h2>
+            <h3 class="my-5">Online payment</h3>
+            <div id="online-payment" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#online-payment"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#online-payment"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#online-payment"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card">
+                    <div
+                      class="card-body d-flex flex-column align-items-center"
+                    >
+                      <h4 class="card-title mb-4">Payment by bank cards</h4>
+                      <div class="card-text w-100">
+                        <div>
+                          <b>Cities:</b>
+                          <span>All cities of Kazakhstan</span>
+                        </div>
+                        <div>
+                          <b>How to pay:</b>
+                          <span>After requisition by</span>
+                          <ul>
+                            <li>
+                              Debit cards of Kaspi Bank, Halyk Bank and other
+                              banks
+                            </li>
+                            <li>
+                              Debit cards of Visa, Master Card, Cirrus Maestro,
+                              American Express
+                            </li>
+                            <li>Credit cards PayDa, SmartCard</li>
+                            <li>Bonus cards GoCard</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <b>Conditions:</b>
+                          <ul>
+                            <li>To get a requisition you need an ID card</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <div
+                      class="card-body d-flex flex-column align-items-center"
+                    >
+                      <h4 class="card-title mb-4">Payment via Kaspi QR</h4>
+                      <div class="card-text w-100">
+                        <div>
+                          <b>Cities:</b>
+                          <span>All cities of Kazakhstan</span>
+                        </div>
+                        <div>
+                          <b>How to pay:</b>
+                          <span>After requisition</span>
+                          <ul>
+                            <li>
+                              Scan QR-code, received after the requisition via
+                              Kaspi.kz app
+                            </li>
+                            <li>
+                              Mobile version - via Kaspi.kz app, which will be
+                              opened after the requisition
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <div
+                      class="card-body d-flex flex-column align-items-center"
+                    >
+                      <h4 class="card-title mb-4">Payment via QIWI</h4>
+                      <div class="card-text w-100">
+                        <div>
+                          <b>Cities:</b>
+                          <span>All cities of Kazakhstan</span>
+                        </div>
+                        <div>
+                          <b>How to pay:</b>
+                          <span>After requisition</span>
+                          <ul>
+                            <li>
+                              Via QIWI-terminal, specifying the phone number of
+                              your order
+                            </li>
+                            <li>
+                              Via QIWI-wallet, specifying the phone number of
+                              your order
+                            </li>
+                            <li>
+                              Via the site qiwi.com, choosing "Shopify" and
+                              specifying your phone number and order sum
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <b>Conditions</b>
+                          <ul>
+                            <li>
+                              Payment is available only after changing the
+                              status to "Awaiting the payment"
+                            </li>
+                            <li>To get an order, you need an ID card</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#online-payment"
+                data-bs-slide="prev"
+              >
+                <i class="fa-solid fa-angle-left fa-2xl"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#online-payment"
+                data-bs-slide="next"
+              >
+                <i class="fa-solid fa-angle-right fa-2xl"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <h3 class="my-5">Payment during getting an order</h3>
+            <div id="during-order" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#during-order"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#during-order"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#during-order"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card">
+                    <div
+                      class="card-body d-flex flex-column align-items-center"
+                    >
+                      <h4 class="card-title mb-4">
+                        Payment by bank cards or QR at pickup points
+                      </h4>
+                      <div class="card-text w-100">
+                        <div>
+                          <b>Cities:</b>
+                          <span>
+                            Almaty, Astana, Karaganda, Pavlodar, Kostanay,
+                            Temirtau, Zhezkazgan, Aktobe, Rudnyi, Taraz,
+                            Shymkent
+                          </span>
+                        </div>
+                        <div>
+                          <b>How to pay:</b>
+                          <span>After receiving the order via</span>
+                          <ul>
+                            <li>Debit cards of Visa, Master Card</li>
+                            <li>
+                              Credit cards Kaspi Red, Halyk Light, PayDa,
+                              SmartCard, Bank Center Credit
+                            </li>
+                            <li>QR in kaspi.kz and HomeBank apps</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <b>Conditions:</b>
+                          <ul>
+                            <li>
+                              Ask a manager if you can pay by this method at a
+                              pickup point
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <div
+                      class="card-body d-flex flex-column align-items-center"
+                    >
+                      <h4 class="card-title mb-4">
+                        Payment via a bank card to a courier
+                      </h4>
+                      <div class="card-text w-100">
+                        <div>
+                          <b>Cities:</b>
+                          <span>
+                            Almaty, Astana, Karaganda, Pavlodar, Kostanay,
+                            Temirtau, Zhezkazgan, Aktobe, Rudnyi, Taraz,
+                            Shymkent
+                          </span>
+                        </div>
+                        <div>
+                          <b>How to pay:</b>
+                          <span>
+                            After receiving an order from a courier pay via a
+                            mobile POS-terminal by a bank card Visa or
+                            MasterCard
+                          </span>
+                        </div>
+                        <div>
+                          <b>Conditions</b>
+                          <ul>
+                            <li>Max order sum - 300,000 ₸</li>
+                            <li>To get an order, you need an ID card</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <div
+                      class="card-body d-flex flex-column align-items-center"
+                    >
+                      <h4 class="card-title mb-4">
+                        Payment by cash at pickup points
+                      </h4>
+                      <div class="card-text w-100">
+                        <div>
+                          <b>Cities:</b>
+                          <span>
+                            Almaty, Astana, Karaganda, Pavlodar, Kostanay,
+                            Temirtau, Zhezkazgan, Aktobe, Rudnyi, Taraz,
+                            Shymkent
+                          </span>
+                        </div>
+                        <div>
+                          <b>How to pay:</b>
+                          <span>
+                            By cash after getting an order at pickup points
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#during-order"
+                data-bs-slide="prev"
+              >
+                <i class="fa-solid fa-angle-left fa-2xl"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#during-order"
+                data-bs-slide="next"
+              >
+                <i class="fa-solid fa-angle-right fa-2xl"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
