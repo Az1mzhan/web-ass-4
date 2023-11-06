@@ -1,0 +1,21 @@
+body {
+  overflow-x: hidden;
+}
+
+.carousel-item > .card {
+  height: 50vh;
+}
+
+#payment-methods {
+  text-decoration: underline;
+}
+
+@media (max-width: 540px) {
+  .card {
+    width: 75vw;
+    min-height: 62.5vh;
+  }
+  .carousel-indicators {
+    height: 125%;
+  }
+}
